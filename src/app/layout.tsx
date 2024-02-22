@@ -2,8 +2,14 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 
 const poppins : NextFontWithVariable = Poppins({ 
   subsets: ["latin"], 
@@ -22,7 +28,11 @@ export default function RootLayout({ children } :
   return (
     <html lang="en">
       <body className={`${poppins.className} ${poppins.variable}}`}>
-        {children}
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
