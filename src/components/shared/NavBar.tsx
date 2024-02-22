@@ -36,7 +36,7 @@ export default function NavBar() {
         <ul className="group-[.open]/nav:flex group-[.open]/nav:flex-col group-[.open]/nav:top-[250%] group-[.open]/nav:absolute hidden md:flex justify-self-center items-center gap-10 font-medium">
           {Object.entries(menuItems).map(([key, value], n) => 
             <li key={n} className="select-none">
-              <Link href={value} className={`bg-gradient-to-br from-50% to-[0] text-[transparent] bg-clip-text from-[--from-color] to-[--to-color] font-semibold [transition:_--from-color_150ms,--to-color_150ms] hover:[--from-color:_theme('colors.blue.800')] hover:[--to-color:_theme('colors.red.primary.500')] ${pathname == value ? " [--from-color:_theme('colors.blue.800')] [--to-color:_theme('colors.red.primary.500')]": " group-[.open]/nav:[--from-color:_theme('colors.grey.100')] group-[.open]/nav:[--to-color:_theme('colors.grey.100')]"}`}>{key}</Link>
+              <Link onClick={() => setMobileOpen(false)} href={value} className={`bg-gradient-to-br from-50% to-[0] text-[transparent] bg-clip-text from-[--from-color] to-[--to-color] font-semibold [transition:_--from-color_150ms,--to-color_150ms] hover:[--from-color:_theme('colors.blue.800')] hover:[--to-color:_theme('colors.red.primary.500')] ${pathname == value ? " [--from-color:_theme('colors.blue.800')] [--to-color:_theme('colors.red.primary.500')]": " group-[.open]/nav:[--from-color:_theme('colors.grey.100')] group-[.open]/nav:[--to-color:_theme('colors.grey.100')]"}`}>{key}</Link>
             </li>
           )}
         </ul>
