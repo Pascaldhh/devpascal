@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState} from "react";
+import Footer from "@/components/shared/Footer";
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -33,10 +34,16 @@ export default function NavBar() {
         <div className="text-nowrap">
           <Link onClick={() => setMobileOpen(false)} href="/" className="font-bold text-red-primary-500 select-none text-xl group"><span className="text-blue-800 transition-all group-[.open]/nav:text-grey-100 group-hover:-rotate-6 inline-block">dev</span><span className="transition-transform delay-150 group-hover:-rotate-6 inline-block">pascal</span></Link>
         </div>
-        <ul className="group-[.open]/nav:flex group-[.open]/nav:flex-col group-[.open]/nav:top-[250%] group-[.open]/nav:absolute hidden md:flex justify-self-center items-center gap-10 font-medium">
-          {Object.entries(menuItems).map(([key, value], n) => 
-            <li key={n} className="select-none">
-              <Link onClick={() => setMobileOpen(false)} href={value} className={`bg-gradient-to-br from-50% to-[0] text-[transparent] bg-clip-text from-[--from-color] to-[--to-color] font-semibold [transition:_--from-color_150ms,--to-color_150ms] hover:[--from-color:_theme('colors.blue.800')] hover:[--to-color:_theme('colors.red.primary.500')] ${pathname == value ? " [--from-color:_theme('colors.blue.800')] [--to-color:_theme('colors.red.primary.500')]": " group-[.open]/nav:[--from-color:_theme('colors.grey.100')] group-[.open]/nav:[--to-color:_theme('colors.grey.100')]"}`}>{key}</Link>
+        <ul className="group-[.open]/nav:w-full group-[.open]/nav:flex group-[.open]/nav:flex-col text-lg md:text-base group-[.open]/nav:top-[300%] group-[.open]/nav:absolute group-[.open]/nav:justify-self-start group-[.open]/nav:items-start hidden md:flex justify-self-center items-center gap-10 font-medium">
+          {Object.entries(menuItems).map(([routeName, route], n) => 
+            <li key={n} className="group-[.open]/nav:w-full select-none">
+              <Link onClick={() => setMobileOpen(false)} href={route} className={`flex items-center justify-between gap-5 transition-colors font-semibold hover:text-red-primary-500 ${pathname == route ? "text-red-primary-500": "group-[.open]/nav:text-grey-100 group-[.open]/nav:hover:text-red-primary-500 text-red-primary-900"}`}>
+                <p className={`inline-block transition-transform delay-500 duration-300 -translate-x-44 group-[.open]/nav:translate-x-0 md:translate-x-0`}>{routeName}</p>
+                <hr className="group-[.open]/nav:block hidden w-full border-dashed border-t-[2px] border-b-0 border-l-0 border-r-0"/>
+                <FontAwesomeIcon icon={faCircleArrowRight} 
+                                 size="lg"
+                                 className="group-[.open]/nav:block hidden"/>
+              </Link>
             </li>
           )}
         </ul>
@@ -55,11 +62,14 @@ export default function NavBar() {
           </button>
         </div>
       </div>
-      <div
-        className="overflow-hidden invisible delay-300 transition-all group-[.open]/nav:delay-0 group-[.open]/nav:visible pointer-events-none select-none fixed grid grid-rows-20 inset-0 h-screen w-full">
+      <div className="overflow-hidden invisible delay-300 transition-all group-[.open]/nav:delay-0 group-[.open]/nav:visible group-[.open]/nav:pointer-events-auto pointer-events-none  select-none fixed grid grid-rows-20 inset-0 h-dvh h-screen w-full">
         {[...Array(20)].map((_, n) =>
           <div key={n} className={`bg-grey-900 transition-transform duration-300 group-[.open]/nav:translate-x-0 ${n % 2 == 0 ? "translate-x-full " : "-translate-x-full "}`}></div>
         )}
+        <div className="w-full group-[.open]/nav:block absolute bottom-0 left-1/2 -translate-x-1/2 z-10 text-grey-100">
+          <Footer classNameIcons="transition-all delay-[125ms] duration-[450ms] group-[.open]/nav:translate-y-0 group-[.open]/nav:opacity-100 translate-y-12 opacity-0" 
+                  classNameCopy="transition-all delay-[250ms] duration-[400ms] group-[.open]/nav:translate-y-0 group-[.open]/nav:opacity-100 translate-y-12 opacity-0"/>
+        </div>
       </div>
     </nav>
   );
