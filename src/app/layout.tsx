@@ -26,12 +26,10 @@ export default function RootLayout({ children } :
   Readonly<{ children: ReactNode; }>) {
   
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth scroll-pt-24">
       <body className={`${poppins.className} ${poppins.variable} text-red-primary-900`}>
         <Header />
-        <main>
-          {children}
-        </main>
+        {children}
         <Footer />
       </body>
     </html>

@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ade40aff-0a45-4599-b202-bfeb5a060403" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +45,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/start-up",
-    "last_opened_file_path": "C:/Development/web/devpascal/src/app/work",
+    "git-widget-placeholder": "feature/homepage",
+    "last_opened_file_path": "C:/Development/web/devpascal/src/components/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,11 +60,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\web\devpascal\src\components\icons" />
+      <recent name="C:\Development\web\devpascal\public" />
       <recent name="C:\Development\web\devpascal\src\app\work" />
       <recent name="C:\Development\web\devpascal\src\app\resume" />
       <recent name="C:\Development\web\devpascal\src\app\contact" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\web\devpascal\public\img" />
       <recent name="C:\Development\web\devpascal\src\components\shared" />
     </key>
   </component>
@@ -71,11 +80,22 @@
       <option name="presentableId" value="Default" />
       <updated>1708598649847</updated>
       <workItem from="1708598650848" duration="26297000" />
-      <workItem from="1708682485067" duration="4250000" />
+      <workItem from="1708682485067" duration="24900000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

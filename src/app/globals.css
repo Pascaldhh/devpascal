@@ -39,6 +39,21 @@
   }
 }
 
+.btn {
+  @apply text-lg relative select-none px-6 py-1.5 font-semibold rounded-[3px] after:w-full after:h-full after:inset-0 after:absolute after:-z-10 after:rounded-[3px] after:translate-x-0.5 after:translate-y-0.5 after:opacity-50 after:border-4 after:border-red-primary-400;
+}
+.btn-primary {
+  @apply relative bg-red-primary-400 text-white;
+}
+.btn-secondary {
+  @apply outline-red-primary-400 px-7 outline-[3px] outline -outline-offset-[3px] text-red-primary-400 after:translate-y-[1.5px] after:translate-x-[1.5px];
+}
+.h-dynamic-hero {
+  @apply h-[80vh] h-[80svh] min-h-[30rem];
+}
+.h-dynamic-bottom {
+  @apply h-[10vh] h-[10svh] min-h-[5rem];
+}
 .h-dynamic-screen {
-  @apply h-screen h-dvh;
+  @apply h-screen h-svh;
 }

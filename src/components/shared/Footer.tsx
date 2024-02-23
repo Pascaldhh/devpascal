@@ -11,7 +11,7 @@ interface FooterProps {
 
 export default function Footer({ className, classNameIcons, classNameCopy }: FooterProps) {
   return ( 
-    <footer className={`py-8 container-small ${className}`}>
+    <footer className={`${className ?? ""} py-8 container-small`}>
       <div className="flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between">
         <div className={`${classNameCopy} order-2 md:order-1`}>
           <p className="text-center font-medium md:text-left">&copy; 2024 Pascal de Haan, All rights reserved.</p>

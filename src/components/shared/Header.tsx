@@ -14,7 +14,7 @@ export default function Header() {
   }, []);
   
   return (
-    <header className={`${isSticky ? "border-b-grey-100 " : ""}sticky top-0 border-b border-transparent border-opacity-50 rounded py-6 bg-white bg-opacity-20 backdrop-blur`}>
+    <header className={`${isSticky ? "border-b-grey-100 " : ""}sticky z-50 top-0 border-b border-transparent border-opacity-50 rounded py-6 bg-white bg-opacity-20 backdrop-blur`}>
       <NavBar />
     </header>
   );
