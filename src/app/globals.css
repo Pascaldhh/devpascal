@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@property --from-color {
+  syntax: '<color>';
+  initial-value: theme("colors.red.primary.900");
+  inherits: false;
+}
+
+@property --to-color {
+  syntax: '<color>';
+  initial-value: theme("colors.red.primary.900");
+  inherits: false;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply transition-colors;
+  background: theme("colors.red.primary.800");
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.red.primary.900");
+}
+
+.container-small {
+  @apply container;
+  --px: theme("container.padding");
+  padding-left: var(--px);
+  padding-right: var(--px);
+}
+@media screen(lg) {
+  .container-small {
+    --px: 9.375rem;
+  }
+}
+
+.h-dynamic-screen {
+  @apply h-screen h-dvh;
+}
