@@ -38,3 +38,7 @@
     --px: 9.375rem;
   }
 }
+
+.h-dynamic-screen {
+  @apply h-screen h-dvh;
+}
