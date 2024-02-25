@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme"
-import colors from 'tailwindcss/colors'
+import { fontFamily } from "tailwindcss/defaultTheme";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -11,11 +11,11 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem"
+      padding: "2rem",
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+      transparent: "transparent",
+      current: "currentColor",
       white: colors.white,
       black: colors.black,
       purple: colors.purple,
@@ -84,12 +84,12 @@ const config: Config = {
         "700": "#2E4656",
         "800": "#243B4C",
         "900": "#182B39",
-      }
+      },
     },
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)", ...fontFamily.sans]
-      }
+        poppins: ["var(--font-poppins)", ...fontFamily.sans],
+      },
     },
   },
   plugins: [],

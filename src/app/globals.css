@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @property --from-color {
-  syntax: '<color>';
+  syntax: "<color>";
   initial-value: theme("colors.red.primary.900");
   inherits: false;
 }
 
 @property --to-color {
-  syntax: '<color>';
+  syntax: "<color>";
   initial-value: theme("colors.red.primary.900");
   inherits: false;
 }
@@ -27,23 +27,28 @@
   background: theme("colors.red.primary.900");
 }
 
-h1, h2 {
-  @apply font-bold bg-clip-text text-transparent;
+h1,
+h2 {
+  @apply bg-clip-text font-bold text-transparent;
 }
-h1, h2, .heading-white {
+h1,
+h2,
+.heading-white {
   @apply bg-gradient-to-br from-red-primary-400 to-red-primary-500;
 }
 h1 {
-  @apply text-[2.5rem] md:text-[2.75rem] lg:text-[3rem] xl:text-[3.5rem];
+  @apply text-[2.5rem] md:text-[2.75rem] lg:text-[3rem] xl:text-[3.5rem] 2xl:text-[3.75rem];
 }
 h2 {
-  @apply text-3xl md:text-[2.4rem] lg:text-[2.55rem];
+  @apply text-3xl md:text-[2.4rem] lg:text-[2.55rem] xl:text-[3rem];
 }
 .heading-white {
   @apply bg-gradient-to-br from-white to-grey-100;
 }
 
-.container-small,.container-small-left, .container-small-right {
+.container-small,
+.container-small-left,
+.container-small-right {
   @apply container;
   --small-px: theme("container.padding");
   --small-px-left: var(--small-px);
@@ -62,34 +67,48 @@ h2 {
   }
 }
 @media screen(lg) {
-  .container-small, .md\:container-small { --small-px: 6.375rem }
-  .container-small-left { --small-px-left: 6.375rem }
-  .container-small-right { --small-px-right: 6.375rem }
+  .container-small,
+  .md\:container-small {
+    --small-px: 6.375rem;
+  }
+  .container-small-left {
+    --small-px-left: 6.375rem;
+  }
+  .container-small-right {
+    --small-px-right: 6.375rem;
+  }
 }
 @media screen(xl) {
-  .container-small, .md\:container-small { --small-px: 9.375rem }
-  .container-small-left { --small-px-left: 9.375rem }
-  .container-small-right { --small-px-right: 9.375rem }
+  .container-small,
+  .md\:container-small {
+    --small-px: 9.375rem;
+  }
+  .container-small-left {
+    --small-px-left: 9.375rem;
+  }
+  .container-small-right {
+    --small-px-right: 9.375rem;
+  }
 }
 
 .btn {
-  @apply text-lg transition-colors after:transition-all relative select-none px-6 py-1.5 font-semibold rounded-[3px] after:w-full after:h-full after:inset-0 after:absolute after:-z-10 after:rounded-[3px] after:translate-x-0.5 after:translate-y-0.5 after:opacity-50 after:border-4 after:border-red-primary-400;
+  @apply relative select-none rounded-[3px] px-6 py-1.5 text-lg font-semibold transition-colors after:absolute after:inset-0 after:-z-10 after:h-full after:w-full after:translate-x-0.5 after:translate-y-0.5 after:rounded-[3px] after:border-4 after:border-red-primary-400 after:opacity-50 after:transition-all;
 }
 .btn-primary {
-  @apply relative bg-red-primary-400 text-white hover:bg-red-primary-500 hover:after:translate-x-1 hover:after:translate-y-1 after:border-[5px];
+  @apply relative bg-red-primary-400 text-white after:border-[5px] hover:bg-red-primary-500 hover:after:translate-x-1 hover:after:translate-y-1;
 }
 .btn-secondary {
-  @apply outline-red-primary-400 px-7 outline-[3px] outline -outline-offset-[3px] text-red-primary-400 after:translate-y-[1.5px] after:translate-x-[1.5px] hover:bg-red-primary-500 hover:outline-red-primary-500 hover:text-white hover:after:translate-x-1 hover:after:translate-y-1 after:border-[5px];
+  @apply px-7 text-red-primary-400 outline outline-[3px] -outline-offset-[3px] outline-red-primary-400 after:translate-x-[1.5px] after:translate-y-[1.5px] after:border-[5px] hover:bg-red-primary-500 hover:text-white hover:outline-red-primary-500 hover:after:translate-x-1 hover:after:translate-y-1;
 }
 .h-dynamic-hero {
-  @apply h-[80vh] h-[80svh] min-h-[30rem];
+  @apply h-[80svh] h-[80vh] min-h-[30rem];
 }
 .h-dynamic-bottom {
-  @apply h-[10vh] h-[10svh] min-h-[5rem];
+  @apply h-[10svh] h-[10vh] min-h-[5rem];
 }
 .h-dynamic-screen {
   @apply h-screen h-svh;
 }
 .h-screen-fallback {
-  @apply h-screen h-dvh;
+  @apply h-dvh h-screen;
 }

@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ade40aff-0a45-4599-b202-bfeb5a060403" name="Changes" comment="" />
+    <list default="true" id="ade40aff-0a45-4599-b202-bfeb5a060403" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/resume/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/resume/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/work/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/SkillInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/SkillInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/WorkInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/WorkInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/AspNetIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/AspNetIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/CircleDownIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/CircleDownIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/DumbbellIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/DumbbellIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/FlutterIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/FlutterIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/MauiIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/MauiIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/NextjsIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/NextjsIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/RobotIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/RobotIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/SchoolIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/SchoolIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/SwiftIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/SwiftIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/TailwindIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/TailwindIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sliders/SkillsSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sliders/SkillsSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sliders/WorkSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sliders/WorkSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,25 +70,26 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/homepage",
-    "last_opened_file_path": "C:/Development/web/devpascal/src/components/icons",
+    "last_opened_file_path": "C:/Development/web/devpascal/public/img/project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Development\\web\\devpascal\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "C:\\Development\\web\\devpascal\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\web\devpascal\public\img\project" />
       <recent name="C:\Development\web\devpascal\src\components\icons" />
       <recent name="C:\Development\web\devpascal\public" />
       <recent name="C:\Development\web\devpascal\src\app\work" />
       <recent name="C:\Development\web\devpascal\src\app\resume" />
-      <recent name="C:\Development\web\devpascal\src\app\contact" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Development\web\devpascal\public\img" />
@@ -71,6 +106,8 @@
       <updated>1708598649847</updated>
       <workItem from="1708598650848" duration="26297000" />
       <workItem from="1708682485067" duration="25675000" />
+      <workItem from="1708777064628" duration="32590000" />
+      <workItem from="1708872265166" duration="13818000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,13 @@
 import { SVGProps } from "react";
 
-export default function TailwindIcon (props: SVGProps<SVGSVGElement>) {
+export default function TailwindIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33"{...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 54 33"
+      {...props}
+    >
       <g clipPath="url(#a)">
         <path
           fill="currentColor"
@@ -13,9 +18,9 @@ export default function TailwindIcon (props: SVGProps<SVGSVGElement>) {
       </g>
       <defs>
         <clipPath id="a">
-          <path fill="#fff" d="M0 0h54v32.4H0z"/>
+          <path fill="#fff" d="M0 0h54v32.4H0z" />
         </clipPath>
       </defs>
     </svg>
   );
-};
+}

@@ -1,17 +1,20 @@
 "use client";
 import { PropsWithChildren, Children } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import SwiperCore from "swiper";
-import 'swiper/css';
-import "swiper/css/autoplay"
+import "swiper/css";
+import "swiper/css/autoplay";
 
-interface SkillsSliderProps extends PropsWithChildren{
+interface SkillsSliderProps extends PropsWithChildren {
   className?: string;
 }
-export default function SkillsSlider({ className, children } : SkillsSliderProps ) {
+export default function SkillsSlider({
+  className,
+  children,
+}: SkillsSliderProps) {
   SwiperCore.use([Autoplay]);
-  const style = `.swiper-wrapper { padding: 20px 0; width: fit-content; }` 
+  const style = `.swiper-wrapper { padding: 20px 0; width: fit-content; }`;
   return (
     <>
       <style>{style}</style>
@@ -28,10 +31,10 @@ export default function SkillsSlider({ className, children } : SkillsSliderProps
         centeredSlidesBounds={true}
         className={className}
       >
-        {[...Array(2)].map((_, i) => 
-          Children.map(Children.toArray(children), (child, i) => 
-            <SwiperSlide className="!w-fit ml-3 mr-3">{child}</SwiperSlide>
-          )
+        {[...Array(2)].map((_, i) =>
+          Children.map(Children.toArray(children), (child, i) => (
+            <SwiperSlide className="ml-3 mr-3 !w-fit">{child}</SwiperSlide>
+          )),
         )}
       </Swiper>
     </>

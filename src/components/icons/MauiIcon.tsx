@@ -1,8 +1,13 @@
 import { SVGProps } from "react";
 
-export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
+export default function MauiIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 419 519" fill="none"{...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 419 519"
+      fill="none"
+      {...props}
+    >
       <path
         fill="#8A6FE8"
         d="m284.432 247.568-.428-25.687c32.355-.546 56.352-10.146 71.304-28.545 27.1-33.34 17.585-85.153 17.478-85.677l25.227-4.828c.492 2.601 11.784 64.186-22.776 106.699-19.961 24.563-50.518 37.364-90.805 38.038Z"
@@ -128,8 +133,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="translate(382.004 103.457) scale(26.4058)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#8065E0"/>
-          <stop offset={1} stopColor="#512BD4"/>
+          <stop stopColor="#8065E0" />
+          <stop offset={1} stopColor="#512BD4" />
         </radialGradient>
         <radialGradient
           id="d"
@@ -139,8 +144,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="rotate(-.261 103320.915 -61502.965) scale(45.8326)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.034} stopColor="#522CD5"/>
-          <stop offset={0.996} stopColor="#8A6FE8"/>
+          <stop offset={0.034} stopColor="#522CD5" />
+          <stop offset={0.996} stopColor="#8A6FE8" />
         </radialGradient>
         <radialGradient
           id="g"
@@ -150,8 +155,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="rotate(179.739 73.78 235.18) scale(50.2476)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.034} stopColor="#522CD5"/>
-          <stop offset={0.996} stopColor="#8A6FE8"/>
+          <stop offset={0.034} stopColor="#522CD5" />
+          <stop offset={0.996} stopColor="#8A6FE8" />
         </radialGradient>
         <radialGradient
           id="h"
@@ -161,8 +166,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="rotate(179.739 109.434 77.214) scale(140.935)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.474} stopColor="#A08BE8"/>
-          <stop offset={0.862} stopColor="#8065E0"/>
+          <stop offset={0.474} stopColor="#A08BE8" />
+          <stop offset={0.862} stopColor="#8065E0" />
         </radialGradient>
         <radialGradient
           id="i"
@@ -172,8 +177,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="rotate(179.739 157.25 79.728) scale(146.053)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.093} stopColor="#E1DFDD"/>
-          <stop offset={0.657} stopColor="#fff"/>
+          <stop offset={0.093} stopColor="#E1DFDD" />
+          <stop offset={0.657} stopColor="#fff" />
         </radialGradient>
         <radialGradient
           id="k"
@@ -183,8 +188,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="rotate(-.261 47964.292 -19744.423) scale(25.9924)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#8065E0"/>
-          <stop offset={1} stopColor="#512BD4"/>
+          <stop stopColor="#8065E0" />
+          <stop offset={1} stopColor="#512BD4" />
         </radialGradient>
         <radialGradient
           id="l"
@@ -194,8 +199,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="translate(25.805 345.043) scale(26.4106)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#8065E0"/>
-          <stop offset={1} stopColor="#512BD4"/>
+          <stop stopColor="#8065E0" />
+          <stop offset={1} stopColor="#512BD4" />
         </radialGradient>
         <radialGradient
           id="m"
@@ -205,8 +210,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           gradientTransform="rotate(-32.203 201.245 -259.246) scale(21.0773)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#8065E0"/>
-          <stop offset={1} stopColor="#512BD4"/>
+          <stop stopColor="#8065E0" />
+          <stop offset={1} stopColor="#512BD4" />
         </radialGradient>
         <linearGradient
           id="b"
@@ -216,8 +221,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           y2={409.505}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#522CD5"/>
-          <stop offset={0.44} stopColor="#8A6FE8"/>
+          <stop stopColor="#522CD5" />
+          <stop offset={0.44} stopColor="#8A6FE8" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -227,8 +232,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           y2={522.048}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#522CD5"/>
-          <stop offset={0.44} stopColor="#8A6FE8"/>
+          <stop stopColor="#522CD5" />
+          <stop offset={0.44} stopColor="#8A6FE8" />
         </linearGradient>
         <linearGradient
           id="e"
@@ -238,8 +243,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           y2={409.709}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#522CD5"/>
-          <stop offset={0.44} stopColor="#8A6FE8"/>
+          <stop stopColor="#522CD5" />
+          <stop offset={0.44} stopColor="#8A6FE8" />
         </linearGradient>
         <linearGradient
           id="f"
@@ -249,8 +254,8 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           y2={518.627}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#522CD5"/>
-          <stop offset={0.44} stopColor="#8A6FE8"/>
+          <stop stopColor="#522CD5" />
+          <stop offset={0.44} stopColor="#8A6FE8" />
         </linearGradient>
         <linearGradient
           id="j"
@@ -260,10 +265,10 @@ export default function MauiIcon (props: SVGProps<SVGSVGElement>) {
           y2={357.022}
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset={0.334} stopColor="#9780E6"/>
-          <stop offset={0.849} stopColor="#8A6FE8"/>
+          <stop offset={0.334} stopColor="#9780E6" />
+          <stop offset={0.849} stopColor="#8A6FE8" />
         </linearGradient>
       </defs>
     </svg>
   );
-};
+}
