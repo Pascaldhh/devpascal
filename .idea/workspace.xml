@@ -7,6 +7,8 @@
     <list default="true" id="ade40aff-0a45-4599-b202-bfeb5a060403" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/WorkInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/WorkInfo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,26 +41,30 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/start-up",
-    "last_opened_file_path": "C:/Development/web/devpascal/src/app/work",
+    "git-widget-placeholder": "feature/homepage",
+    "last_opened_file_path": "C:/Development/web/devpascal/public/img/project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Development\\web\\devpascal\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "C:\\Development\\web\\devpascal\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\web\devpascal\public\img\project" />
+      <recent name="C:\Development\web\devpascal\src\components\icons" />
+      <recent name="C:\Development\web\devpascal\public" />
       <recent name="C:\Development\web\devpascal\src\app\work" />
       <recent name="C:\Development\web\devpascal\src\app\resume" />
-      <recent name="C:\Development\web\devpascal\src\app\contact" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\web\devpascal\public\img" />
       <recent name="C:\Development\web\devpascal\src\components\shared" />
     </key>
   </component>
@@ -71,11 +77,24 @@
       <option name="presentableId" value="Default" />
       <updated>1708598649847</updated>
       <workItem from="1708598650848" duration="26297000" />
-      <workItem from="1708682485067" duration="4250000" />
+      <workItem from="1708682485067" duration="25675000" />
+      <workItem from="1708777064628" duration="32590000" />
+      <workItem from="1708872265166" duration="17394000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

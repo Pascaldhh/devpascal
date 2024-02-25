@@ -12,9 +12,11 @@ export default function Header() {
     addEventListener("scroll", checkSticky);
     return () => removeEventListener("scroll", checkSticky);
   }, []);
-  
+
   return (
-    <header className={`${isSticky ? "border-b-grey-100 " : ""}sticky top-0 border-b border-transparent border-opacity-50 rounded py-6 bg-white bg-opacity-20 backdrop-blur`}>
+    <header
+      className={`${isSticky ? "border-b-grey-100 " : ""}sticky top-0 z-50 rounded border-b border-transparent border-opacity-50 bg-white bg-opacity-20 py-6 backdrop-blur`}
+    >
       <NavBar />
     </header>
   );
