@@ -27,7 +27,7 @@ export default function NavBar() {
     Resume: "/resume",
     Contact: "/contact"
   };
-  
+  const animationObjects = 20;
   const animationDuration = "duration-[350ms]";
   const animationDelays = [
     `group-[.open]/nav:delay-[225ms] ${animationDuration}`,
@@ -71,8 +71,8 @@ export default function NavBar() {
           </button>
         </div>
       </div>
-      <div className="z-10 overflow-hidden invisible delay-300 transition-all group-[.open]/nav:delay-0 group-[.open]/nav:visible group-[.open]/nav:pointer-events-auto pointer-events-none select-none fixed grid grid-rows-20 inset-0 h-dynamic-screen w-full">
-        {[...Array(20)].map((_, n) =>
+      <div className="z-10 overflow-hidden invisible delay-300 transition-all group-[.open]/nav:delay-0 group-[.open]/nav:visible group-[.open]/nav:pointer-events-auto pointer-events-none select-none fixed grid grid-rows-20 inset-0 h-screen-fallback w-full">
+        {[...Array(animationObjects)].map((_, n) =>
           <div key={n} className={`bg-grey-900 transition-transform duration-300 group-[.open]/nav:translate-x-0 ${n % 2 == 0 ? "translate-x-full " : "-translate-x-full "}`}></div>
         )}
         <div className="w-full group-[.open]/nav:block absolute bottom-0 left-1/2 -translate-x-1/2 z-10 text-grey-100">

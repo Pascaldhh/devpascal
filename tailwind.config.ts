@@ -17,6 +17,8 @@ const config: Config = {
       transparent: 'transparent',
       current: 'currentColor',
       white: colors.white,
+      black: colors.black,
+      purple: colors.purple,
       red: {
         primary: {
           "100": "#FFECEB",

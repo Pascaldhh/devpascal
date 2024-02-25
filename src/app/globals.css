@@ -27,26 +27,59 @@
   background: theme("colors.red.primary.900");
 }
 
-.container-small {
+h1, h2 {
+  @apply font-bold bg-clip-text text-transparent;
+}
+h1, h2, .heading-white {
+  @apply bg-gradient-to-br from-red-primary-400 to-red-primary-500;
+}
+h1 {
+  @apply text-[2.5rem] md:text-[2.75rem] lg:text-[3rem] xl:text-[3.5rem];
+}
+h2 {
+  @apply text-3xl md:text-[2.4rem] lg:text-[2.55rem];
+}
+.heading-white {
+  @apply bg-gradient-to-br from-white to-grey-100;
+}
+
+.container-small,.container-small-left, .container-small-right {
   @apply container;
-  --px: theme("container.padding");
-  padding-left: var(--px);
-  padding-right: var(--px);
+  --small-px: theme("container.padding");
+  --small-px-left: var(--small-px);
+  --small-px-right: var(--small-px);
+  padding-left: var(--small-px-left);
+  padding-right: var(--small-px-right);
+}
+@media screen(md) {
+  .md\:container-small {
+    @apply container;
+    --small-px: theme("container.padding");
+    --small-px-left: var(--small-px);
+    --small-px-right: var(--small-px);
+    padding-left: var(--small-px-left);
+    padding-right: var(--small-px-right);
+  }
 }
 @media screen(lg) {
-  .container-small {
-    --px: 9.375rem;
-  }
+  .container-small, .md\:container-small { --small-px: 6.375rem }
+  .container-small-left { --small-px-left: 6.375rem }
+  .container-small-right { --small-px-right: 6.375rem }
+}
+@media screen(xl) {
+  .container-small, .md\:container-small { --small-px: 9.375rem }
+  .container-small-left { --small-px-left: 9.375rem }
+  .container-small-right { --small-px-right: 9.375rem }
 }
 
 .btn {
-  @apply text-lg relative select-none px-6 py-1.5 font-semibold rounded-[3px] after:w-full after:h-full after:inset-0 after:absolute after:-z-10 after:rounded-[3px] after:translate-x-0.5 after:translate-y-0.5 after:opacity-50 after:border-4 after:border-red-primary-400;
+  @apply text-lg transition-colors after:transition-all relative select-none px-6 py-1.5 font-semibold rounded-[3px] after:w-full after:h-full after:inset-0 after:absolute after:-z-10 after:rounded-[3px] after:translate-x-0.5 after:translate-y-0.5 after:opacity-50 after:border-4 after:border-red-primary-400;
 }
 .btn-primary {
-  @apply relative bg-red-primary-400 text-white;
+  @apply relative bg-red-primary-400 text-white hover:bg-red-primary-500 hover:after:translate-x-1 hover:after:translate-y-1 after:border-[5px];
 }
 .btn-secondary {
-  @apply outline-red-primary-400 px-7 outline-[3px] outline -outline-offset-[3px] text-red-primary-400 after:translate-y-[1.5px] after:translate-x-[1.5px];
+  @apply outline-red-primary-400 px-7 outline-[3px] outline -outline-offset-[3px] text-red-primary-400 after:translate-y-[1.5px] after:translate-x-[1.5px] hover:bg-red-primary-500 hover:outline-red-primary-500 hover:text-white hover:after:translate-x-1 hover:after:translate-y-1 after:border-[5px];
 }
 .h-dynamic-hero {
   @apply h-[80vh] h-[80svh] min-h-[30rem];
@@ -56,4 +89,7 @@
 }
 .h-dynamic-screen {
   @apply h-screen h-svh;
+}
+.h-screen-fallback {
+  @apply h-screen h-dvh;
 }

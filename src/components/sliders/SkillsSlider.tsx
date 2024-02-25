@@ -1,27 +1,39 @@
 "use client";
-
-import Slider from "react-slick"
-import { PropsWithChildren } from "react";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { PropsWithChildren, Children } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from "swiper/modules";
+import SwiperCore from "swiper";
+import 'swiper/css';
+import "swiper/css/autoplay"
 
 interface SkillsSliderProps extends PropsWithChildren{
   className?: string;
 }
 export default function SkillsSlider({ className, children } : SkillsSliderProps ) {
-  const settings = {
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    swipeToSlide: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false
-  };
+  SwiperCore.use([Autoplay]);
+  const style = `.swiper-wrapper { padding: 20px 0; width: fit-content; }` 
   return (
-    <Slider {...settings} className={`${className} flex gap-2`}>
-      {children}
-    </Slider>
+    <>
+      <style>{style}</style>
+      <Swiper
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        speed={1000}
+        slidesPerView="auto"
+        grabCursor={true}
+        centeredSlides={true}
+        centeredSlidesBounds={true}
+        className={className}
+      >
+        {[...Array(2)].map((_, i) => 
+          Children.map(Children.toArray(children), (child, i) => 
+            <SwiperSlide className="!w-fit ml-3 mr-3">{child}</SwiperSlide>
+          )
+        )}
+      </Swiper>
+    </>
   );
 }
