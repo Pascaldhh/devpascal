@@ -44,7 +44,7 @@ export default function NavBar() {
           <Link
             onClick={() => setMobileOpen(false)}
             href="/"
-            className="group select-none text-xl font-bold text-red-primary-500"
+            className="group select-none text-xl font-bold text-red-primary-500 lg:text-2xl"
           >
             <span className="inline-block text-blue-800 transition-all group-hover:-rotate-6 group-[.open]/nav:text-grey-100">
               dev

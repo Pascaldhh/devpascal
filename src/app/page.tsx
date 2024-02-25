@@ -116,7 +116,7 @@ export default function HomePage() {
       </section>
       <section id="about" className="pt-6 text-center">
         <h2 className="container">About me</h2>
-        <div className="mt-8 flex flex-col gap-8 text-base font-medium md:mt-12 md:gap-12">
+        <div className="mt-8 flex flex-col gap-y-8 text-base font-medium md:mt-12 md:gap-y-24">
           <div className="container-small-left flex flex-col items-center gap-x-6 gap-y-2 md:flex-row md:gap-x-10 md:text-right">
             <SchoolIcon className="size-24 md:shrink-0" />
             <div className="hidden w-[70%] justify-center md:flex lg:w-full">
@@ -148,7 +148,10 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <Link href="/about" className="btn btn-primary mt-10 inline-block">
+        <Link
+          href="/about"
+          className="btn btn-primary mt-10 inline-block md:mt-20"
+        >
           Find out more
         </Link>
       </section>
@@ -168,7 +171,7 @@ export default function HomePage() {
       </section>
       <section id="work" className="pt-[5.8rem]">
         <div className="text-center lg:text-left">
-          <div className="container-small lg:flex lg:justify-between">
+          <div className="container-small lg:flex lg:items-center lg:justify-between">
             <h2>Checkout my work</h2>
             <Link
               href="/work"
@@ -177,7 +180,7 @@ export default function HomePage() {
               See all work
             </Link>
           </div>
-          <WorkSlider className="mb-10 mt-8">
+          <WorkSlider className="mb-10 mt-8 md:mb-14 md:mt-12">
             <WorkInfo
               title="Portfolio"
               image="/img/project/portfolio.png"
@@ -216,9 +219,9 @@ export default function HomePage() {
         </div>
       </section>
       <section id="contact" className="pt-[5.8rem]">
-        <div className="relative bg-gradient-to-b from-red-primary-400 to-red-primary-500 py-12">
+        <div className="relative bg-gradient-to-b from-red-primary-400 to-red-primary-500 py-12 md:py-16 xl:py-20">
           <div className="container text-center">
-            <h2 className="heading-white mb-8">Like what you see?</h2>
+            <h2 className="heading-white mb-8 xl:mb-12">Like what you see?</h2>
             <Link href="/contact" className="btn btn-primary">
               Contact
             </Link>
