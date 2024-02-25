@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${poppins.className} ${poppins.variable} text-red-primary-900`}
       >
         <Header />
-        {children}
+        <div className="min-h-[80svh]">{children}</div>
         <Footer />
       </body>
     </html>

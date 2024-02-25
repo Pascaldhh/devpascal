@@ -23,7 +23,7 @@ export default function Footer({
           </p>
         </div>
         <div className={`${classNameIcons} order-1 md:order-2`}>
-          <div className="flex justify-center gap-8 md:justify-start">
+          <div className="flex justify-center gap-7 md:justify-start">
             <Link
               href="https://github.com/Pascaldhh/"
               target="_blank"

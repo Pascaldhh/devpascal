@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ade40aff-0a45-4599-b202-bfeb5a060403" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/WorkInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/WorkInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Footer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homepage",
+    "git-widget-placeholder": "feature/contactpage",
     "last_opened_file_path": "C:/Development/web/devpascal/public/img/project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -79,7 +79,7 @@
       <workItem from="1708598650848" duration="26297000" />
       <workItem from="1708682485067" duration="25675000" />
       <workItem from="1708777064628" duration="32590000" />
-      <workItem from="1708872265166" duration="17394000" />
+      <workItem from="1708872265166" duration="24887000" />
     </task>
     <servers />
   </component>
