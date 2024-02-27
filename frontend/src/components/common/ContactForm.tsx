@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
-
 export default function ContactForm() {
   const [submitDisabled, setSubmitDisabled] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -9,6 +8,8 @@ export default function ContactForm() {
   const [errorEmail, setErrorEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [successForm, setSuccessForm] = useState("");
+
+  const captchaRef = useRef<HTMLInputElement>(null);
 
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -39,6 +40,15 @@ export default function ContactForm() {
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+
+    const captcha = captchaRef.current;
+    if(captcha == null) return;
+
+    if(captcha.value != "7") {
+      setErrorMessage("Your a robot!");
+      return;
+    }
+    
     setIsLoading(true);
     const form = event.currentTarget;
     const formData = new FormData(event.currentTarget);
@@ -55,7 +65,6 @@ export default function ContactForm() {
     const headers = new Headers({
       "content-type": "application/json"
     });
-
 
     try {
       const response = await fetch('http://127.0.0.1:5144/api/contact', {
@@ -122,6 +131,10 @@ export default function ContactForm() {
             </svg>
             <span className="sr-only">Loading...</span>
           </div>
+        </div>
+        <div className="">
+          <p>What is 2 + 5?</p>
+          <input type="text" className="w-full rounded px-5 py-3 font-medium shadow-[0_3px_8px_0] shadow-grey-900/20 placeholder:text-grey-200" ref={captchaRef} />
         </div>
       </div>
       <button disabled={submitDisabled} type="submit" className="btn btn-primary mt-5 disabled:bg-grey-200 disabled:after:border-grey-100">
