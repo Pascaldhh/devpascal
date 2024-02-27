@@ -45,10 +45,10 @@ export default function ContactForm() {
     if(captcha == null) return;
 
     if(captcha.value != "7") {
-      setErrorMessage("Your a robot!");
+      setErrorMessage("You're a robot!");
       return;
     }
-    
+
     setIsLoading(true);
     const form = event.currentTarget;
     const formData = new FormData(event.currentTarget);
