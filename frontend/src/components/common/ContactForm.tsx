@@ -56,25 +56,30 @@ export default function ContactForm() {
       "content-type": "application/json"
     });
 
-    const response = await fetch('http://127.0.0.1:5144/api/contact', {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify(body)
-    });
 
-    const result = await response.json();
-    if(result["hasSend"]) {
-      setErrorName("");
-      setErrorEmail("");
-      setErrorMessage("");
-      setSuccessForm("The form was send successfully!")
-      form.reset();
-    } else {
-      setErrorName(result["senderName"] ?? "");
-      setErrorEmail(result["sender"] ?? "");
-      setErrorMessage(result["message"] ?? "");
-      setSuccessForm("")
+    try {
+      const response = await fetch('http://127.0.0.1:5144/api/contact', {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(body)
+      });
+      const result = await response.json();
+      if(result["hasSend"]) {
+        setErrorName("");
+        setErrorEmail("");
+        setErrorMessage("");
+        setSuccessForm("The form was send successfully!")
+        form.reset();
+      } else {
+        setErrorName(result["senderName"] ?? "");
+        setErrorEmail(result["sender"] ?? "");
+        setErrorMessage(result["message"] ?? "");
+        setSuccessForm("")
+      }
+    } catch (error) {
+      setErrorMessage("The mailserver couldn't be reached. Try again later.");
     }
+
     setIsLoading(false);
   };
 
@@ -119,7 +124,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
-      <button disabled={submitDisabled} type="submit" className="btn btn-primary mt-3 disabled:bg-grey-200 disabled:after:border-grey-100">
+      <button disabled={submitDisabled} type="submit" className="btn btn-primary mt-5 disabled:bg-grey-200 disabled:after:border-grey-100">
         Submit
       </button>
     </form>
