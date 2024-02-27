@@ -25,9 +25,7 @@ export default function SwiperButtons({
     const prev = prevRef.current;
     const next = nextRef.current;
     const swiper = swiperRef.current?.swiper;
-    console.log("???");
     if (!swiper || !prev || !next) return;
-    console.log(swiper);
 
     [prev, next].forEach((btn) => changeButton(btn, "enabled"));
     if (swiper.isBeginning) changeButton(prev, "disabled");
