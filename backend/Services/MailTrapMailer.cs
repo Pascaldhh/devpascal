@@ -18,6 +18,6 @@ public class MailTrapMailer : IMailSender
     public void Send(IMail mail)
     {
         SmtpClient client = Connect();
-        client.Send("contact@devpascal.com", "haan.pascal@hotmail.com", "Hello world", "testbody");
+        client.Send("contact@devpascal.com", mail.Header.SenderName, "Contact form devpascal", mail.Body.Message);
     }
 }

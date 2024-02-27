@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddSingleton<IMailSender, MailTrapMailer>();
+builder.Services.AddSingleton<IMailHandler, MailHandler>();
 
 builder.Services.AddControllers();
 
