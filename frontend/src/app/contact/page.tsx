@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import ContactForm from "@/components/common/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -15,26 +16,7 @@ export default function ContactPage() {
                 Drop me a message below, and let&apos;s start building something
                 amazing together!
               </p>
-              <form className="mt-8 flex w-full flex-col items-center gap-y-7 md:max-w-xl">
-                <input
-                  type="text"
-                  className="w-full rounded px-5 py-3 font-medium shadow-[0_3px_8px_0] shadow-grey-800/20 placeholder:text-grey-200"
-                  placeholder="Name"
-                />
-                <input
-                  type="email"
-                  className="w-full rounded px-5 py-3 font-medium shadow-[0_3px_8px_0] shadow-grey-900/20 placeholder:text-grey-200"
-                  placeholder="Email"
-                />
-                <textarea
-                  className="w-full resize-none rounded px-5 py-3 font-medium shadow-[0_3px_8px_0] shadow-grey-900/20 placeholder:text-grey-200"
-                  placeholder="Message"
-                  rows={5}
-                ></textarea>
-                <button type="submit" className="btn btn-primary mt-3">
-                  Submit
-                </button>
-              </form>
+              <ContactForm />
             </div>
             <div className="">
               <div className="mt-16">

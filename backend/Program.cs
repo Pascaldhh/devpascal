@@ -5,6 +5,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddSingleton<IMailSender, MailTrapMailer>();
+builder.Services.AddSingleton<IMailHandler, MailHandler>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader();
+    });
+});
 
 builder.Services.AddControllers();
 
@@ -20,6 +31,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 
