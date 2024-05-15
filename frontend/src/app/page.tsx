@@ -159,13 +159,11 @@ export default function HomePage() {
         <div className="relative bg-gradient-to-b from-red-primary-400 to-red-primary-500 py-8">
           <div className="md:container-small md:flex md:items-center md:gap-6">
             <h2 className="heading-white text-center md:order-2">Skills</h2>
-            <SkillsSlider className="md:order-1">
+            <SkillsSlider className="[mask-image:_linear-gradient(to_right,_rgba(0,0,0,0),_15%,_rgba(0,0,0,1),_50%,_rgb(0,0,0,1),_85%,_rgb(0,0,0,0))] md:order-1">
               {Object.entries(skillsInfo).map(([skill, icon], n) => (
                 <SkillInfo key={n} icon={icon} text={skill} />
               ))}
             </SkillsSlider>
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-red-primary-500"></div>
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-red-primary-500"></div>
           </div>
         </div>
       </section>
